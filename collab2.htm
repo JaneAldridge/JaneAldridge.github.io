@@ -1,0 +1,577 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><b>Initial Post</b></p>
+
+<p class=MsoNormal><b>by Jane Aldridge - Wednesday, 19 October 2022, 12:35 PM</b></p>
+
+<p class=MsoNormal><b>Number of replies: 2</b></p>
+
+<p class=MsoNormal><b>Time to Change the CVSS - What characteristics of CVSS do
+the authors (Spring et al, 2021) criticise?</b></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b>1)      The Lack of Justification for the CVSS Formula</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The authors state that a major issue with the calculation of
+CVSS scores, is that to calculate a base score, eight questions have to be
+answered, and these questions are based on qualitative data. These answers are
+then converted into a scale between 0 and 10.  The CVSS v3.0 equation was based
+on data from experts who ranked 100 vulnerabilities.  So the basis of the data
+is qualitative.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The authors also make the point that the CVSS documentation
+is not transparent about how the vulnerability score is calculated, and that
+qualitative measurements should not be converted into numbers. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>I agree that CVSS relies solely on the judgement of human
+assessors, and so this is subjective, even if an assessor is off by several
+points on a 10 point scale, it will alter the scoring significantly (Campagna,
+2020).</p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b>2)      Operational Problems with Scoring </b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The authors also highlight the problems with assigning
+scoring, in terms of inconsistencies and vague guidelines. To demonstrate this
+the authors carried out a survey and found that 50% of experienced security
+professionals surveyed mis-scored vulnerabilities using CVSS (Spring et al,
+2021). </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>In addition, the authors state that CVSS defaults to the
+assumption of ´assume the worst´, in terms of the impact of a vulnerability. 
+CVSS does not use public repositories of exploits, such as Metaspoilt or exploitDB,
+which would provide data to refine the impact of a vulnerability.    </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>In fact, CVSS needs to correlate data from a number of
+sources (Aboud, 2020), which would include threat and exploit intelligence
+data.  In addition, CVSS needs to include an assessment of current and
+predicted future attacker activity, as well as taking into consideration the
+age of a vulnerability, its potential for harm, the degree to which it is
+exploitable and how frequently the threat is being seen (Aboud, 2020)</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>3)      CVSS scores severity, not security risk</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The authors state that CVSS categorises vulnerabilities in
+terms of severity, that severity is then used to prioritise vulnerabilities in
+terms of remediation (Spring et al, 2021), but that using CVSS as a risk score
+is not correct, although many organisations do use CVSS directly as a risk
+score. As examples they refer to the US government and the payment card
+industry. The article not only states that CVSS does not support risk scoring,
+but it goes further and states that ´it fails to inform vulnerability
+management´. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>I think an important point here is the difference between
+vulnerability scoring and risk.  Vulnerability refers to a weakness in
+hardware, software and procedures, whereas risk is the potential for lost,
+damaged or destroyed assets (Glover, 2022). So risk must take into account the
+probability of an event happening, whereas vulnerability scoring will not. 
+Risk also needs to look at the broader context, so as an example, rather than
+looking at a risk in isolation there could be a chain of vulnerabilities which
+could increase the risk impact and also the probability of an event occurring. 
+Spring et al, also make this point that context and the chain of potential
+events needs to be taken into account, which CVSS does not do :</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>´CVSS does not account, broadly for context….. related or
+chained vulnerabilities…. and different interpretations of a CVSS score in
+different communities´</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The authors state that organisations want to know the risk
+of a vulnerability and the priority of a vulnerability, in terms of how quickly
+they should respond and remediate a vulnerability. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>I agree that CVSS should not be used as a risk score. 
+Gunter Ollman (September 2019) states that CVSS should never be used as a risk
+score, and that it is an important variable in the risk calculation but is not
+adequate to calculate risk in itself.  Abby Ross (2019) also backs up this
+view, that CVSS is being misused as a risk score.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>4)      Failure to Account for Context</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>4.1) Technical Context</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The authors state that there are various ways that CVSS does
+not take into account context, firstly in terms of the technical context :</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>CVSS does not capture the complexity of shared libraries,
+for example, where specific functions are being called</p>
+
+<p class=MsoNormal> Vulnerabilities can be chained together, increasing risk,
+although CVSS v3.0 provides some guidance about vulnerability chaining it isn’t
+sufficient</p>
+
+<p class=MsoNormal>Web vulnerabilities are not taken into account</p>
+
+<p class=MsoNormal>CVSS uses technical severities of low, medium, high,
+critical but there are no definitions for these scores, and also the
+definitions could change depending on the organisational context</p>
+
+<p class=MsoNormal>Gunter Ollman (September 2019) states that CVSS was intended
+to score vulnerabilities in the context of software and devices, but not from a
+system context, which supports the view that CVSS does not support chained
+vulnerabilities or even system level vulnerabilities.  CVSS does not consider
+the relationship between vulnerabilities, as an example CVSS would not link the
+ability of an attacker to escalate privileges and then attack insecure
+misconfigurations (Ross, 2019)</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>4.2) Organisational Context</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>A really important point that the authors make is that CVSS
+gives equal waiting to vulnerabilities in terms of confidentiality, integrity
+and availability.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>However, the weighting will depend on the context, as an
+example data loss, in terms of confidentiality is going to be more important to
+a regulated financial institution and availability is going to be more
+important for embedded devices medical devices, like pace makers.  The authors
+do make the point that CVSS v3.1 provides an option for adjusting the
+importance of confidentiality, integrity and availability, but state that
+because the adjustment is part of the CVSS formula it is not transparent and so
+it cannot be determined if this is an adequate solution.   </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The CVSS score for a bank should be different for an Oil company
+like BP or Shell, even if the vulnerabilities were the same.  Gunter Ollman
+states that every industry assesses risk differently and each business has its
+own risk factor qualification which an external party won´t know. CVSS does not
+take into account the bigger risk picture and is just one component of the risk
+picture (Ross, 2019). CVSS also does not take into consideration the value of
+an exposed asset to an organisation (Ross, 2019). </p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b>5)      Failure to Account for Consequences</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The authors state that the score should include the
+consequences of an exploitation.  CVSS 3.0 tries to address the likelihood of a
+vulnerability being exploited, but assumes widespread exploitation. The authors
+further make the point that high CVSS scores are not correlated to whether a
+vulnerability will be exploited. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>I agree that CVSS needs to take into account the potential
+for exploitation and also the criticality of an asset (Ross, 2019).</p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b>6)      Not all Vulnerabilities are Captured</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The authors also make the point that CVSS is not going to
+capture threats such as misconfigurations, incorrect default settings, and the
+threats that arise from the integration of systems. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>7)      An Alternative – SSVC</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>SSVC (Stakeholder- Specific Vulnerability Categorization) is
+an alternative to CVSS proposed by Spring et al.  In my view this methodology
+is a better alternative, due to the following reasons, which try to address the
+issues with CVSS listed previously: </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>7.1) One of the key advantages of SSVC is that it tries to
+avoid a ‘one-size-fits-all solution’ (Spring et al, 2019). I think this is an
+important point, organisations are complex as are the systems which support
+them, and all organisations are different and none of them will have the same
+vulnerabilities. I think that CVSS takes an overly simplistic approach to
+capturing vulnerabilities. SSVC focuses on the decision making aspect of
+vulnerability management, which is the ultimate outcome of CVSS, to make
+decisions about priorities and where to focus resources.  SSVC uses a framework
+which identifies the inputs, determines the aspects of vulnerability management
+which are in scope, and also defines the context (Spring et al, 2019).  SSVC
+tries to capture the fact that all organisations are different, and also it
+aims to deal with organisational complexity.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal> 7.2) SSVC uses decision trees to support the decision
+making process. The decision tree shows the important elements of a decision,
+possible decision values and possible outcomes.  The decision trees are used to
+provide advice about vulnerability prioritization and are easily understood by
+stakeholders. CVSS uses technical severity as the key factor, not the decision
+which is the ultimate outcome. Some of the decision points will require
+substantial analysis but this is to be expected, because analysing vulnerabilities
+in any organisation is going to take time and multiple iterations.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal> 7.3)   SSVC states that it is as qualitative approach, it
+doesn’t provide a ‘false sense of security’ by using numerical
+representations.  Unless there is a source(s) of data which is actually proven
+for all vulnerabilities and different organisations, then a numerical
+representation is too simplistic.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>‘Each vulnerability has a potentially unique relationship to
+the socio-technical system in which it exists, including the internet.  The
+context of the vulnerability, and the systems it impacts, are inextricably
+linked to managing it. Temporal and environmental considerations should be
+primary’ (Spring et al, 2019)</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Organisations are too complex and each has a different
+environment to use a purely quantitative approach. Industry 4.0 increases
+complexity and causes a greater shift of risk to external vulnerabilities,
+which are external to an organisation.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>7.4) SSVC involves key stakeholders in the decision
+modelling process, and this makes sense, because these stakeholders will have a
+greater awareness of the potential vulnerabilities than just using a checklist
+of questions, proposed by CVSS, which was created on the basis of experts who
+did not have the organisational context.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal> 7.5)  SSVC does not use numerical scores, I think this is
+an advantage because it eliminates a false sense of security, from the decision
+making process. Vulnerability management is complex, and stakeholders need to
+understand the risks, and not rely on a numerical scoring system.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal> 7.6) SSVC and Current Information Sources</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The authors propose that decision points can also be
+informed by using vendor feeds of vulnerabilities, if a valid feed can be
+matched to an organisation.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b> Summary</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>There are obvious drawbacks to CCVS as mentioned in this
+post, and my view is that it simplifies vulnerability management, and cannot be
+effective because it doesn’t take into account the broader context, and
+environmental factors, as well as the fact that each organisation is unique and
+there needs to be a method which is flexible enough to deal with each unique
+organisation.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>It is not possible to have a ‘one size fits all’ method,
+CVSS is too rigid and is also misleading by providing a numerical
+representation, which is not based on ‘real data’.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>SSVC attempts to capture the complexity of different
+organisations and focuses on the outcome of vulnerability management which is
+to support the decision making process in terms of which vulnerabilities to fix
+and where to focus resources. It does this by involving stakeholders, who are
+familiar with the organisation and using decision trees.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>With industry 4.0 I think that CVSS will become even more
+ineffective in being able to manage vulnerabilities, because it doesn’t model
+the organisational context sufficiently. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>References</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Aboud, J. (2020). Why you need to stop using the CVSS for
+Vulnerability Management. Available from:</p>
+
+<p class=MsoNormal>https://www.tenable.com/blog/why-you-need-to-stop-using-cvss-for-vulnerability-prioritization</p>
+
+<p class=MsoNormal>[Accessed 1st Oct 2022]</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Campagna, R. (2020). 5 Reasons to Stop Using CVSS Scores to
+Measure Risk. Available from:</p>
+
+<p class=MsoNormal>https://www.balbix.com/blog/5-reasons-to-stop-using-cvss-scores-to-measure-risk/</p>
+
+<p class=MsoNormal>[Accessed 1st Oct 2022]</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Glover, C. (2022). The difference between threat
+vulnerability and risk and why you need to know. Available from:</p>
+
+<p class=MsoNormal>https://www.travasecurity.com/blog/the-difference-between-threat-vulnerability-and-risk-and-why-you-need-to-know#:~:text=Vulnerability%20refers%20to%20a%20weakness,%2C%20damaged%2C%20or%20destroyed%20assets.</p>
+
+<p class=MsoNormal>[Accessed 1st Oct 2022]</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Ollman, G. (2019). Stop Using CVSS to Score Risk. Available
+from:</p>
+
+<p class=MsoNormal>https://www.securityweek.com/stop-using-cvss-score-risk</p>
+
+<p class=MsoNormal>[Accessed 1st Oct 2022]</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Ross, A. (2019). Calling into Question the CVSS. Available
+from:</p>
+
+<p class=MsoNormal>https://securityintelligence.com/calling-into-question-the-cvss/</p>
+
+<p class=MsoNormal>[Accessed 1st Oct 2022]</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Spring, J., Hatleback, E., Householder, A., Manion, A.,
+Shick, D. (2021) Time to Change the CVSS. IEEE Computer and Reliability
+Societies.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Spring, J., Hatleback, E., Householder, A., Manion, A.,
+Oliver, M., Sarvapalli, V., Tyzenhaus, L., Yarbrough, C. (2021) Prioritizing
+Vulnerability Response: A Stakeholder-Specific Vulnerability Categorization
+(Version 2.0). Software Engineering Institute Carnegie Mellon University.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>In reply to Jane Aldridge</b></p>
+
+<p class=MsoNormal><b>Re: Initial Post</b></p>
+
+<p class=MsoNormal><b>by Iason Rigas - Wednesday, 19 October 2022, 2:01 PM</b></p>
+
+<p class=MsoNormal>Hi Jane,</p>
+
+<p class=MsoNormal>That was indeed a very complete and in-depth overview of the
+topic. One question which comes to my mind reading our forums and the
+discussions on CVSS is how easy will it be for a complete industry to move away
+from CVSS to CCVS having witnessed already the sometimes how companies and
+vendors find it difficult to move between versions of CVSS itself. As Industry
+4.0 is coming along together with IoT devices and other new technologies it
+becomes difficult to understand the possible impact on safety by looking at the
+individual metrics.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>We are accustomed to look into scoring from a
+confidentiality, integrity and availability vector perspective. As Klidenist
+points out safety and the potential for loss of life is a real concern in
+Industry 4.0 technologies including the modern automotive industry. So as you
+mentioned not only CVSS is not able to model the organisational context
+sufficiently but it also fails to include metrics which are relevant for the
+technological context and the environment in which the technology operates. I
+would also argue whether it would be reasonable to expect CVSS to be able to
+cope as a metric with risks which extend beyond the topics of information
+technology, such as the potential for loss of life. Similar questions have been
+raised in the past with respect to SCADA systems and potential safety
+implication but without coming up with a scoring system for addressing such
+threats.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>References</b></p>
+
+<p class=MsoNormal>Klinedinst (2015). CVSS and the Internet of Things.
+Available from:</p>
+
+<p class=MsoNormal>https://insights.sei.cmu.edu/blog/cvss-and-the-internet-of-things/</p>
+
+<p class=MsoNormal>[Accessed 19th Oct 2022]</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>In reply to Iason Rigas</b></p>
+
+<p class=MsoNormal><b>Re: Initial Post</b></p>
+
+<p class=MsoNormal><b>by Jane Aldridge - Wednesday, 19 October 2022, 9:28 PM</b></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal>Hi Iason,</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Thank you for your feedback on my post.</p>
+
+<p class=MsoNormal>In terms of how easy it will be for the industry to move
+away from CVSS, it will be a ‘paradigm shift’, but I do believe that this is
+possible, because of the inherent flaws in CCVS (Spring et al, 2021). When I
+started to work on this analysis, I was not planning to propose that SSVC
+replaces CVSS, instead I was thinking that CVSS could incorporate aspects of
+SSVC, because it doesn’t make sense to ‘reinvent the wheel’, especially as CVSS
+is widely used throughout the industry. However after reading the paper
+‘Prioritizing vulnerability response: A stakeholder-specific vulnerability
+categorization’ by Spring et al (2021), I realised that CVSS is fundamentally
+flawed. There have been similar paradigm shifts, such as the move from the
+waterfall development methodology to agile, which was actually a greater change
+for the technology industry, than moving from CVSS to a different framework
+like SSVC (Lynn, 2022).</p>
+
+<p class=MsoNormal>I think that the driver which could make this shift happen,
+is if vulnerabilities which were not identified or prioritised by CVSS manifest
+themselves in significant incidents or exploits. More and more failings of CVSS
+will become apparent due to industry 4.0, because CVSS is very inward looking,
+it doesn’t look at the broader organisational context. I included some blogs in
+my analysis because they were from practitioners of CVSS, who were obviously
+frustrated by its’ failings. As an example, here is a quote from Ross, A (2019)
+:</p>
+
+<p class=MsoNormal>‘our X-Force Red hackers have seen time and time again
+vulnerabilities with CVSS scores of 10 bumped to the top of the priority list
+even though the assets they could affect would only cause minimal impact to the
+business if they were compromised. High scores were also attributed to
+vulnerabilities even when criminals were not exploiting them in the wild at
+that time.’</p>
+
+<p class=MsoNormal>The fact that CVSS is used by the US government and
+leveraged by payments processing, also means that if there is a major incident,
+which CVSS has not captured, due to a missed vulnerability, then there will be
+lot of focus on how to improve or replace CVSS.</p>
+
+<p class=MsoNormal>An article explaining why a major consultancy is moving away
+from CVSS also backs up this view (Schwartz, 2021).</p>
+
+<p class=MsoNormal>In terms of your comment that CVSS is not able to cope with
+risks, which extend beyond information technology, I would go further than this
+and state that CVSS is not a risk methodology, it just deals with
+vulnerabilities, which are different (Spring et al, 2021).</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>References</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Lynn, R. (2022). Agile Methodologies a Beginners Guide: The
+History of Agile. Available from:</p>
+
+<p class=MsoNormal>https://www.planview.com/resources/guide/agile-methodologies-a-beginners-guide/history-of-agile/</p>
+
+<p class=MsoNormal>[Accessed 19th Oct 2022]</p>
+
+<p class=MsoNormal>Ross, A. (2019). Calling into Question the CVSS. Available
+from:</p>
+
+<p class=MsoNormal>https://securityintelligence.com/calling-into-question-the-cvss/</p>
+
+<p class=MsoNormal>[Accessed 1st Oct 2022]</p>
+
+<p class=MsoNormal>Schwartz, S. (2021). Gartner guidance moves away from
+prioritizing critical CVE’s, focuses on exploitability. Available from:</p>
+
+<p class=MsoNormal>https://www.cybersecuritydive.com/news/gartner-vulnerability-management-cisa-cve-patching/610253/</p>
+
+<p class=MsoNormal>[Accessed 19th Oct 2022]</p>
+
+<p class=MsoNormal>Spring, J., Hatleback, E., Householder, A., Manion, A.,
+Shick, D. (2021) Time to Change the CVSS. IEEE Computer and Reliability
+Societies.</p>
+
+<p class=MsoNormal>Spring, J., Hatleback, E., Householder, A., Manion, A.,
+Oliver, M., Sarvapalli, V., Tyzenhaus, L., Yarbrough, C. (2021) Prioritizing
+Vulnerability Response: A Stakeholder-Specific Vulnerability Categorization
+(Version 2.0). Software Engineering Institute Carnegie Mellon University.</p>
+
+</div>
+
+</body>
+
+</html>
