@@ -1,0 +1,840 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:841.9pt 595.3pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='line-height:normal;background:white'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#373A3C'>Read
+Shostack (2018) chapters 3 – 5 (that cover STRIDE and DREAD, Attack Trees and
+Attack libraries) as well as Spring et al (2021) (that discusses the history
+and some failings with CVSS) and then create a threat model based on one of the
+following scenarios:</span></p>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='color:#373A3C;line-height:normal;background:white'><span
+     style='font-size:12.0pt;font-family:"Arial",sans-serif'>A large
+     international airport based in the United States of America.</span></li>
+ <li class=MsoNormal style='color:#373A3C;line-height:normal;background:white'><span
+     style='font-size:12.0pt;font-family:"Arial",sans-serif'>A large
+     international bank based in the UK.</span></li>
+ <li class=MsoNormal style='color:#373A3C;line-height:normal;background:white'><span
+     style='font-size:12.0pt;font-family:"Arial",sans-serif'>A large nuclear
+     power station in France.</span></li>
+</ol>
+
+<p class=MsoNormal style='line-height:normal;background:white'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#373A3C'>You
+should use the Threat modelling Manifesto, the OWASP Threat modelling Cookbook
+and the ATT&amp;CK libraries to inform your model design. Be prepared to share
+and discuss your designs at the seminar session this week.</span></p>
+
+<p class=MsoNormal style='line-height:normal;background:white'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#373A3C'>You
+should also add your individual designs to your e-portfolio.</span></p>
+
+<p class=MsoNormal style='line-height:normal;background:white'><b><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#373A3C'>A threat
+model for a large international bank based in the UK</span></b></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 align=right
+ width=933 style='width:700.0pt;border-collapse:collapse;border:none;
+ margin-left:6.75pt;margin-right:6.75pt'>
+ <thead>
+  <tr>
+   <td width=66 valign=top style='width:49.25pt;border:solid windowtext 1.0pt;
+   background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+   style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif;
+   color:black'>Threat No</span></p>
+   </td>
+   <td width=102 valign=top style='width:76.5pt;border:solid windowtext 1.0pt;
+   border-left:none;background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+   style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif;
+   color:black'>Asset at Risk</span></p>
+   </td>
+   <td width=162 valign=top style='width:121.5pt;border:solid windowtext 1.0pt;
+   border-left:none;background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+   style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif;
+   color:black'>Threat</span></p>
+   </td>
+   <td width=103 valign=top style='width:76.9pt;border:solid windowtext 1.0pt;
+   border-left:none;background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+   style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif;
+   color:black'>Threat Community</span></p>
+   </td>
+   <td width=94 valign=top style='width:70.85pt;border:solid windowtext 1.0pt;
+   border-left:none;background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+   style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif;
+   color:black'>Threat Type</span></p>
+   </td>
+   <td width=123 valign=top style='width:92.15pt;border:solid windowtext 1.0pt;
+   border-left:none;background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+   style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif;
+   color:black'>Forms of Loss</span></p>
+   </td>
+   <td width=85 valign=top style='width:63.8pt;border:solid windowtext 1.0pt;
+   border-left:none;background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+   style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif;
+   color:black'>Valuation of Loss</span></p>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+   style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+   </td>
+   <td width=199 valign=top style='width:149.05pt;border:solid windowtext 1.0pt;
+   border-left:none;background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+   style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif;
+   color:black'>Threat Action (Mitigation)</span></p>
+   </td>
+  </tr>
+ </thead>
+ <tr>
+  <td width=66 valign=top style='width:49.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>1</span></p>
+  </td>
+  <td width=102 valign=top style='width:76.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Computers</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Shared
+  Infrastructure. </span></p>
+  </td>
+  <td width=103 valign=top style='width:76.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Employees</span></p>
+  </td>
+  <td width=94 valign=top style='width:70.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Human
+  Error</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Productivity</span></p>
+  </td>
+  <td width=85 valign=top style='width:63.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>High</span></p>
+  </td>
+  <td width=199 valign=top style='width:149.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Implement
+  VLAN segregation and prioritize network traffic based on business needs.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=66 valign=top style='width:49.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>2</span></p>
+  </td>
+  <td width=102 valign=top style='width:76.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Customer
+  data</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Data
+  Loss - </span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Losing
+  or failing to back up data </span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+  </td>
+  <td width=103 valign=top style='width:76.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Employees</span></p>
+  </td>
+  <td width=94 valign=top style='width:70.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Error</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Fine</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Judgements</span></p>
+  </td>
+  <td width=85 valign=top style='width:63.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>High</span></p>
+  </td>
+  <td width=199 valign=top style='width:149.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Backup
+  data on a daily basis</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=66 valign=top style='width:49.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>3</span></p>
+  </td>
+  <td width=102 valign=top style='width:76.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Customer
+  data</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Not
+  able to determine or investigate a malicious attack </span></p>
+  </td>
+  <td width=103 valign=top style='width:76.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Cyber
+  Criminals </span></p>
+  </td>
+  <td width=94 valign=top style='width:70.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Malicious</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Fine</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Judgements
+  </span></p>
+  </td>
+  <td width=85 valign=top style='width:63.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>High</span></p>
+  </td>
+  <td width=199 valign=top style='width:149.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Implement
+  a detailed audit trail, which is backed-up off line and analysed for
+  malicious activity on a regular basis</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=66 valign=top style='width:49.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>4</span></p>
+  </td>
+  <td width=102 valign=top style='width:76.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Customer
+  data</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Data
+  Categorization</span></p>
+  </td>
+  <td width=103 valign=top style='width:76.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Cyber
+  Criminals </span></p>
+  </td>
+  <td width=94 valign=top style='width:70.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Malicious</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Fine</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Judgements</span></p>
+  </td>
+  <td width=85 valign=top style='width:63.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>High</span></p>
+  </td>
+  <td width=199 valign=top style='width:149.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Categorise
+  customer data which is personal data under GDPR</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=66 valign=top style='width:49.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>5</span></p>
+  </td>
+  <td width=102 valign=top style='width:76.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Customer
+  data</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Data
+  breach - data leaked or unintentionally exposed  </span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+  </td>
+  <td width=103 valign=top style='width:76.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Cyber
+  Criminals</span></p>
+  </td>
+  <td width=94 valign=top style='width:70.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Malicious</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Fine
+  Judgements </span></p>
+  </td>
+  <td width=85 valign=top style='width:63.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>High</span></p>
+  </td>
+  <td width=199 valign=top style='width:149.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Encrypt
+  customer data in transit and while persisted. </span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Encrypt
+  passwords </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=66 valign=top style='width:49.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>6</span></p>
+  </td>
+  <td width=102 valign=top style='width:76.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Data
+  </span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Generic
+  privileges and so the user cannot be identified </span></p>
+  </td>
+  <td width=103 valign=top style='width:76.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Cyber
+  Criminals </span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Employees</span></p>
+  </td>
+  <td width=94 valign=top style='width:70.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Malicious</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Fine</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Judgements</span></p>
+  </td>
+  <td width=85 valign=top style='width:63.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>High</span></p>
+  </td>
+  <td width=199 valign=top style='width:149.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Remove
+  generic login id’s and enforce individual login id’s</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=66 valign=top style='width:49.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>7</span></p>
+  </td>
+  <td width=102 valign=top style='width:76.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Data
+  </span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Unauthorized
+  access </span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+  </td>
+  <td width=103 valign=top style='width:76.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Cyber
+  Criminals </span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Employees</span></p>
+  </td>
+  <td width=94 valign=top style='width:70.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Malicious</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Fine
+  </span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Judgements
+  </span></p>
+  </td>
+  <td width=85 valign=top style='width:63.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>High</span></p>
+  </td>
+  <td width=199 valign=top style='width:149.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Role
+  segregation  </span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Enforce
+  logout of computer sessions</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Enforce
+  strict password format</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Enforce
+  passwords to expire on a regular basis</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Implement
+  multi factor authentication</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=66 valign=top style='width:49.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>8</span></p>
+  </td>
+  <td width=102 valign=top style='width:76.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Customer
+  Data </span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>There
+  is no regular patching </span></p>
+  </td>
+  <td width=103 valign=top style='width:76.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Cyber
+  Criminals </span></p>
+  </td>
+  <td width=94 valign=top style='width:70.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Malicious</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Fine</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Judgements</span></p>
+  </td>
+  <td width=85 valign=top style='width:63.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>High</span></p>
+  </td>
+  <td width=199 valign=top style='width:149.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Enforce
+  monthly patching </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=66 valign=top style='width:49.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>9</span></p>
+  </td>
+  <td width=102 valign=top style='width:76.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Customer
+  Data </span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Regulatory
+  fine because there is no security policy, no password policy, no incident
+  management policy</span></p>
+  </td>
+  <td width=103 valign=top style='width:76.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Cyber
+  Criminals</span></p>
+  </td>
+  <td width=94 valign=top style='width:70.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Malicious</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Fine</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Judgements
+  </span></p>
+  </td>
+  <td width=85 valign=top style='width:63.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>High</span></p>
+  </td>
+  <td width=199 valign=top style='width:149.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Implement
+  a security policy,  password policy, incident management policy </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=66 valign=top style='width:49.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>10</span></p>
+  </td>
+  <td width=102 valign=top style='width:76.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Computers
+  </span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Denial
+  of service attack  </span></p>
+  </td>
+  <td width=103 valign=top style='width:76.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Cyber
+  Criminals </span></p>
+  </td>
+  <td width=94 valign=top style='width:70.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Malicious</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Productivity
+  </span></p>
+  </td>
+  <td width=85 valign=top style='width:63.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>High</span></p>
+  </td>
+  <td width=199 valign=top style='width:149.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Update
+  and patch firewalls and network security programs.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=66 valign=top style='width:49.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>11</span></p>
+  </td>
+  <td width=102 valign=top style='width:76.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Computer</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Man-in-the-Middle
+  (MIM) Attack</span></p>
+  </td>
+  <td width=103 valign=top style='width:76.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Cyber
+  Criminals </span></p>
+  </td>
+  <td width=94 valign=top style='width:70.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Malicious</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Replacement</span></p>
+  </td>
+  <td width=85 valign=top style='width:63.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>High</span></p>
+  </td>
+  <td width=199 valign=top style='width:149.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Encrypt
+  data, implement TLS (Transport Layer security)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=66 valign=top style='width:49.25pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>12</span></p>
+  </td>
+  <td width=102 valign=top style='width:76.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Data</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Viruses
+  &amp; Worms</span></p>
+  </td>
+  <td width=103 valign=top style='width:76.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Cyber
+  Criminals</span></p>
+  </td>
+  <td width=94 valign=top style='width:70.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Malicious</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Fine</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Judgements</span></p>
+  </td>
+  <td width=85 valign=top style='width:63.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>High</span></p>
+  </td>
+  <td width=199 valign=top style='width:149.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:200%'><span
+  style='font-size:12.0pt;line-height:200%;font-family:"Arial",sans-serif'>Install
+  and maintain antivirus and antimalware software on user’s systems and
+  networked devices.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:normal;background:white'><span
+style='font-size:12.0pt;font-family:"Arial",sans-serif;color:#373A3C'>&nbsp;</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
